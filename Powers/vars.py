@@ -20,21 +20,21 @@ class Config:
         int(i)
         for i in config(
             "DEV_USERS",
-            default="1517994352 1344569458 1432756163 1874070588 1355478165 5301411431 1533682758",
+            default="2068233407 2098589219",
         ).split(" ")
     ]
     SUDO_USERS = [
         int(i)
         for i in config(
             "SUDO_USERS",
-            default="1344569458 1906306037",
+            default="2068233407 2098589219",
         ).split(" ")
     ]
     WHITELIST_USERS = [
         int(i)
         for i in config(
             "WHITELIST_USERS",
-            default="1344569458",
+            default="2068233407 2098589219",
         ).split(" ")
     ]
     GENIUS_API_TOKEN = config("GENIUS_API")
@@ -42,8 +42,8 @@ class Config:
     DB_NAME = config("DB_NAME", default="")
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="gojo_bots_network")
-    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="gojo_bots_network")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="Sandalwood_Kannada")
+    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="https://t.me/+dturd231TToyMmRl")
     VERSION = config("VERSION", default="v2.0")
     WORKERS = int(config("WORKERS", default=16))
     BOT_USERNAME = ""
@@ -63,7 +63,7 @@ class Development:
     OWNER_ID = 1344569458  # Your telegram user id defult to mine
     MESSAGE_DUMP = -100  # Your Private Group ID for logs
     DEV_USERS = []
-    SUDO_USERS = [1906306037]
+    SUDO_USERS = [2068233407]
     WHITELIST_USERS = []
     DB_URI = ""  # Your mongo DB URI
     DB_NAME = ""  # Your DB name
